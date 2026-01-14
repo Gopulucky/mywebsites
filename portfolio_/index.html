@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHackers | Hackathon Team Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>CodeHackers</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#hackathons">Hackathons</a></li>
+                <li><a href="#trainings">Trainings</a></li>
+                <li><a href="#innovations">Innovations</a></li>
+                <li><a href="#people">People</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about" class="btn-nav">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Building</span>
+                    <span class="typing-text" id="typingText"></span>
+                </h1>
+                <p class="hero-subtitle">We are a passionate hackathon team turning innovative ideas into reality
+                    through collaboration, creativity, and cutting-edge technology.</p>
+
+                <!-- Trusted By Section -->
+                <div class="trusted-by">
+                    <p class="trusted-label">Trusted by 100+ organizations</p>
+                    <div class="trusted-logos">
+                        <div class="logo-item">OpenSea</div>
+                        <div class="logo-item">Citi</div>
+                        <div class="logo-item">IBM</div>
+                        <div class="logo-item">Google</div>
+                        <div class="logo-item">Microsoft</div>
+                        <div class="logo-item">Amazon</div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Explore Our Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#join" class="btn btn-secondary">Join Our Team</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">Innovative solutions built during hackathons and beyond</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="product-title">AI Assistant Pro</h3>
+                    <p class="product-desc">An intelligent coding assistant that helps developers write better code with
+                        AI-powered suggestions.</p>
+                    <div class="product-tags">
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <a href="#" class="product-link">Learn More <i class="fas fa-arrow-up-right"></i></a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="product-title">SecureChain</h3>
+                    <p class="product-desc">Blockchain-based secure document verification system for enterprises and
+                        educational institutions.</p>
+                    <div class="product-tags">
+                        <span class="tag">Blockchain</span>
+                        <span class="tag">Security</span>
+                        <span class="tag">React</span>
+                    </div>
+                    <a href="#" class="product-link">Learn More <i class="fas fa-arrow-up-right"></i></a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="product-title">EcoTracker</h3>
+                    <p class="product-desc">Carbon footprint monitoring and reduction platform with actionable
+                        sustainability insights.</p>
+                    <div class="product-tags">
+                        <span class="tag">Sustainability</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Mobile</span>
+                    </div>
+                    <a href="#" class="product-link">Learn More <i class="fas fa-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons Marquee Section -->
+    <section class="section dark-section" id="hackathons">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2 class="section-title">Hackathons & Events</h2>
+                <p class="section-subtitle">Our journey through innovation competitions and workshops</p>
+            </div>
+
+            <!-- Hackathons Marquee -->
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Original Items -->
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Global Hackathon 2024</h3>
+                            <p class="carousel-date">March 2024 • 1st Place</p>
+                            <p class="carousel-desc">Developed a real-time disaster response coordination system using
+                                satellite imagery and AI.</p>
+                            <div class="carousel-tech">
+                                <span>AI/ML</span>
+                                <span>GIS</span>
+                                <span>Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>FinTech Innovation Challenge</h3>
+                            <p class="carousel-date">November 2023 • 2nd Place</p>
+                            <p class="carousel-desc">Created a decentralized finance platform for microloans in
+                                developing regions.</p>
+                            <div class="carousel-tech">
+                                <span>Blockchain</span>
+                                <span>Web3</span>
+                                <span>Smart Contracts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Climate Hack Summit</h3>
+                            <p class="carousel-date">June 2023 • Most Innovative</p>
+                            <p class="carousel-desc">Built predictive models for urban heat islands and proposed green
+                                infrastructure solutions.</p>
+                            <div class="carousel-tech">
+                                <span>Data Science</span>
+                                <span>Python</span>
+                                <span>Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>AI Startup Weekend</h3>
+                            <p class="carousel-date">January 2023 • Finalist</p>
+                            <p class="carousel-desc">Prototyped an AI-powered healthcare diagnostic tool in 54 hours.
+                            </p>
+                            <div class="carousel-tech">
+                                <span>Healthcare</span>
+                                <span>AI/ML</span>
+                                <span>Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>DevCon 2022</h3>
+                            <p class="carousel-date">September 2022 • People's Choice</p>
+                            <p class="carousel-desc">Developed an open-source collaboration platform for remote
+                                developer teams.</p>
+                            <div class="carousel-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>WebRTC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>University HackFest</h3>
+                            <p class="carousel-date">April 2022 • Best UI/UX</p>
+                            <p class="carousel-desc">Designed and developed an educational platform for coding
+                                beginners.</p>
+                            <div class="carousel-tech">
+                                <span>UI/UX</span>
+                                <span>React</span>
+                                <span>Education</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate Items for Smooth Loop -->
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Global Hackathon 2024</h3>
+                            <p class="carousel-date">March 2024 • 1st Place</p>
+                            <p class="carousel-desc">Developed a real-time disaster response coordination system using
+                                satellite imagery and AI.</p>
+                            <div class="carousel-tech">
+                                <span>AI/ML</span>
+                                <span>GIS</span>
+                                <span>Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>FinTech Innovation Challenge</h3>
+                            <p class="carousel-date">November 2023 • 2nd Place</p>
+                            <p class="carousel-desc">Created a decentralized finance platform for microloans in
+                                developing regions.</p>
+                            <div class="carousel-tech">
+                                <span>Blockchain</span>
+                                <span>Web3</span>
+                                <span>Smart Contracts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="carousel-card">
+                            <div class="carousel-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Climate Hack Summit</h3>
+                            <p class="carousel-date">June 2023 • Most Innovative</p>
+                            <p class="carousel-desc">Built predictive models for urban heat islands and proposed green
+                                infrastructure solutions.</p>
+                            <div class="carousel-tech">
+                                <span>Data Science</span>
+                                <span>Python</span>
+                                <span>Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainings Marquee Section -->
+    <section class="section" id="trainings">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2 class="section-title">Trainings & Workshops</h2>
+                <p class="section-subtitle">Our educational programs and skill development sessions</p>
+            </div>
+
+            <!-- Trainings Marquee -->
+            <div class="marquee-container reversed">
+                <div class="marquee-track">
+                    <!-- Original Items -->
+                    <div class="marquee-item">
+                        <div class="training-carousel-card">
+                            <div class="training-carousel-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Web Development Bootcamp</h3>
+                            <p class="training-carousel-date">Next: April 15-30, 2024</p>
+                            <p class="training-carousel-desc">Intensive 2-week program covering full-stack development
+                                with modern frameworks.</p>
+                            <div class="training-carousel-features">
+                                <span>MERN Stack</span>
+                                <span>Responsive Design</span>
+                                <span>Deployment</span>
+                            </div>
+                            <a href="#" class="training-carousel-link">Register Now <i
+                                    class="fas fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="training-carousel-card">
+                            <div class="training-carousel-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI/ML Fundamentals</h3>
+                            <p class="training-carousel-date">Monthly Workshops</p>
+                            <p class="training-carousel-desc">Hands-on training in machine learning algorithms and
+                                practical AI applications.</p>
+                            <div class="training-carousel-features">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Real Projects</span>
+                            </div>
+                            <a href="#" class="training-carousel-link">Learn More <i
+                                    class="fas fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="training-carousel-card">
+                            <div class="training-carousel-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3>Blockchain Development</h3>
+                            <p class="training-carousel-date">May 10-24, 2024</p>
+                            <p class="training-carousel-desc">Complete guide to blockchain technology, smart contracts,
+                                and dApp development.</p>
+                            <div class="training-carousel-features">
+                                <span>Solidity</span>
+                                <span>Ethereum</span>
+                                <span>Web3.js</span>
+                            </div>
+                            <a href="#" class="training-carousel-link">Register Now <i
+                                    class="fas fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="training-carousel-card">
+                            <div class="training-carousel-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>UI/UX Design Workshop</h3>
+                            <p class="training-carousel-date">June 5-7, 2024</p>
+                            <p class="training-carousel-desc">Learn design principles, prototyping, and user research
+                                methodologies.</p>
+                            <div class="training-carousel-features">
+                                <span>Figma</span>
+                                <span>Prototyping</span>
+                                <span>User Research</span>
+                            </div>
+                            <a href="#" class="training-carousel-link">Learn More <i
+                                    class="fas fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="training-carousel-card">
+                            <div class="training-carousel-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile App Development</h3>
+                            <p class="training-carousel-date">July 8-22, 2024</p>
+                            <p class="training-carousel-desc">Build cross-platform mobile applications using React
+                                Native and Flutter.</p>
+                            <div class="training-carousel-features">
+                                <span>React Native</span>
+                                <span>Flutter</span>
+                                <span>Mobile UI</span>
+                            </div>
+                            <a href="#" class="training-carousel-link">Register Now <i
+                                    class="fas fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="training-carousel-card">
+                            <div class="training-carousel-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Cloud & DevOps</h3>
+                            <p class="training-carousel-date">August 12-26, 2024</p>
+                            <p class="training-carousel-desc">Master cloud infrastructure, containerization, and CI/CD
+                                pipelines.</p>
+                            <div class="training-carousel-features">
+                                <span>AWS</span>
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                            </div>
+                            <a href="#" class="training-carousel-link">Learn More <i
+                                    class="fas fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate Items for Smooth Loop -->
+                    <div class="marquee-item">
+                        <div class="training-carousel-card">
+                            <div class="training-carousel-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Web Development Bootcamp</h3>
+                            <p class="training-carousel-date">Next: April 15-30, 2024</p>
+                            <p class="training-carousel-desc">Intensive 2-week program covering full-stack development
+                                with modern frameworks.</p>
+                            <div class="training-carousel-features">
+                                <span>MERN Stack</span>
+                                <span>Responsive Design</span>
+                                <span>Deployment</span>
+                            </div>
+                            <a href="#" class="training-carousel-link">Register Now <i
+                                    class="fas fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item">
+                        <div class="training-carousel-card">
+                            <div class="training-carousel-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI/ML Fundamentals</h3>
+                            <p class="training-carousel-date">Monthly Workshops</p>
+                            <p class="training-carousel-desc">Hands-on training in machine learning algorithms and
+                                practical AI applications.</p>
+                            <div class="training-carousel-features">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Real Projects</span>
+                            </div>
+                            <a href="#" class="training-carousel-link">Learn More <i
+                                    class="fas fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section" id="people">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Canopus Team</h2>
+                <p class="section-subtitle">The creative minds behind our innovations</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="team-image-wrapper">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&background=random&size=200" alt="John Doe"
+                            class="team-image">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>John Doe</h3>
+                        <p class="team-role">CEO & Founder</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="team-image-wrapper">
+                        <img src="https://ui-avatars.com/api/?name=Jane+Smith&background=random&size=200"
+                            alt="Jane Smith" class="team-image">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Jane Smith</h3>
+                        <p class="team-role">CTO</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="team-image-wrapper">
+                        <img src="https://ui-avatars.com/api/?name=Mike+Ross&background=random&size=200" alt="Mike Ross"
+                            class="team-image">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Mike Ross</h3>
+                        <p class="team-role">Lead Developer</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card">
+                    <div class="team-image-wrapper">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+Lee&background=random&size=200" alt="Sarah Lee"
+                            class="team-image">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Lee</h3>
+                        <p class="team-role">Product Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section dark-section" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Updates</h2>
+                <p class="section-subtitle">Insights from our tech journey</p>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/id/1/400/250" alt="Blog Thumb">
+                        <div class="blog-date-badge">15 Mar</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta-tags">
+                            <span class="blog-tag">Innovation</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3>The Future of AI in Hackathons</h3>
+                        <p>How artificial intelligence is reshaping the landscape of competitive coding and rapid
+                            prototyping.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/id/119/400/250" alt="Blog Thumb">
+                        <div class="blog-date-badge">28 Feb</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta-tags">
+                            <span class="blog-tag">Teamwork</span>
+                            <span class="blog-read-time">3 min read</span>
+                        </div>
+                        <h3>Building Winning Teams</h3>
+                        <p>Key strategies for assembling diverse and effective teams that can deliver under pressure.
+                        </p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://picsum.photos/id/180/400/250" alt="Blog Thumb">
+                        <div class="blog-date-badge">10 Feb</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta-tags">
+                            <span class="blog-tag">Blockchain</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                        <h3>Decentralized Future</h3>
+                        <p>Exploring the potential of Web3 technologies to solve real-world problems in developing
+                            nations.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-cta">
+                <a href="#" class="btn btn-primary">View All Posts <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Image 2 Style) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>CodeHackers</span>
+                    </a>
+                    <p class="footer-tagline">Building innovative solutions through collaboration and creativity.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-links-col">
+                        <h4 class="footer-links-title">Products</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#">AI Assistant Pro</a></li>
+                            <li><a href="#">SecureChain</a></li>
+                            <li><a href="#">EcoTracker</a></li>
+                            <li><a href="#">All Products</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-col">
+                        <h4 class="footer-links-title">Events</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#hackathons">Hackathons</a></li>
+                            <li><a href="#trainings">Trainings</a></li>
+                            <li><a href="#">Workshops</a></li>
+                            <li><a href="#">Calendar</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-col">
+                        <h4 class="footer-links-title">Community</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#people">Team</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#">Join Us</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-col">
+                        <h4 class="footer-links-title">Resources</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2024 CodeHackers. All rights reserved.</p>
+                    <div class="footer-legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Manage Cookies</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-right">
+                    <div class="footer-newsletter">
+                        <p>Subscribe to our newsletter</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input">
+                            <button type="submit" class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
