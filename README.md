@@ -198,76 +198,69 @@ Full Key of Dependent: (Emp_ID, Dep_Name)
 
 ### 3. Draw an E-R diagram for Hospital Management System
 
-```
-                    ╔════════════╗
-                    ║  PATIENT   ║
-                    ╔════════════╗
-                         │
-         ┌───────────────┼───────────────┐
-         │               │               │
-    Patient_ID      Patient_Name      Address
-      (PK)             Phone          DOB
-                       Gender
-                         │
-                         │
-                    ◇◇◇◇◇◇◇◇
-                  < Admitted >
-                    ◇◇◇◇◇◇◇◇
-                         │
-                         │
-    ┌────────────────────┴────────────────────┐
-    │                                          │
-╔═══════════╗                          ┌──────────┐
-║   ROOM    ║                          │  DOCTOR  │
-╔═══════════╗                          └──────────┘
-    │                                        │
-Room_No(PK)                            Doctor_ID(PK)
-Room_Type                              Doctor_Name
-Availability                           Specialization
-                                       Phone
-    │                                        │
-    │                                        │
-    │                                   ◇◇◇◇◇◇◇◇
-    │                                 < Treats >
-    │                                   ◇◇◇◇◇◇◇◇
-    │                                        │
-    │                                        │
-    │                                  ┌──────────┐
-    │                                  │  NURSE   │
-    │                                  └──────────┘
-    │                                        │
-    │                                   Nurse_ID(PK)
-    │                                   Nurse_Name
-    │                                   Shift
-    │
-    │                              ┌────────────┐
-    └──────────────────────────────│ DEPARTMENT │
-                                   └────────────┘
-                                         │
-                                    Dept_ID(PK)
-                                    Dept_Name
-                                    Location
+erDiagram
+    %% Entities and Attributes
+    PATIENT {
+        int Patient_ID PK
+        string Patient_Name
+        string Address
+        string Phone
+        date DOB
+        string Gender
+    }
 
+    DOCTOR {
+        int Doctor_ID PK
+        string Doctor_Name
+        string Specialization
+        string Phone
+    }
 
-╔══════════════╗
-║ APPOINTMENT  ║  (Weak Entity - depends on Patient)
-╔══════════════╗
-      │
- Appointment_ID
- Date_Time
- Status
+    NURSE {
+        int Nurse_ID PK
+        string Nurse_Name
+        string Shift
+    }
 
+    ROOM {
+        int Room_No PK
+        string Room_Type
+        boolean Availability
+    }
 
-┌──────────────┐
-│ PRESCRIPTION │
-└──────────────┘
-      │
-Prescription_ID(PK)
-Medicine_Name
-Dosage
-Duration
-Date_Issued
-```
+    DEPARTMENT {
+        int Dept_ID PK
+        string Dept_Name
+        string Location
+    }
+
+    APPOINTMENT {
+        int Appointment_ID PK
+        datetime Date_Time
+        string Status
+    }
+
+    PRESCRIPTION {
+        int Prescription_ID PK
+        string Medicine_Name
+        string Dosage
+        string Duration
+        date Date_Issued
+    }
+
+    %% Relationships based on your input
+    PATIENT ||--o{ APPOINTMENT : "has (Weak)"
+    PATIENT }|--|| ROOM : "admitted_to"
+    PATIENT }|--|{ DOCTOR : "treated_by"
+    
+    DOCTOR ||--o{ PRESCRIPTION : "issues"
+    PATIENT ||--o{ PRESCRIPTION : "receives"
+    
+    DEPARTMENT ||--|{ ROOM : "contains"
+    DEPARTMENT ||--|{ DOCTOR : "employs"
+    DEPARTMENT ||--|{ NURSE : "employs"
+    
+    NURSE }|--|{ ROOM : "assigned_to"
 
 **Relationships:**
 - Patient **Admitted** to Room (M:N)
